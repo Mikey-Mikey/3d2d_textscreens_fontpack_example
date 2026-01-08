@@ -1,4 +1,6 @@
 -- InitPostEntity is required since the TEXTSCREEN_REVAMPED table is not available before then.
+-- The hook name ( second parameter ) can be whatever name you want but keep it unique to prevent conflictions.
+-- I used fontpack.AddFonts because the addon name is "fontpack" and the hook adds fonts.
 hook.Add( "InitPostEntity", "fontpack.AddFonts", function()
     if not TEXTSCREEN_REVAMPED then
         MsgC( Color( 255, 0, 0 ), "Textscreens Revamped is not installed!\n" )
